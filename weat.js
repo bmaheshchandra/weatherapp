@@ -3,7 +3,7 @@ let req =  new XMLHttpRequest();
 //open a connection
 var plc=document.getElementById('detail')
 var c="";
-c+=plc.elements[0].value;
+c+=plc.value;
 console.log(c)
 var lstr='https://api.openweathermap.org/data/2.5/weather?q='+c+'&appid=93f26e3c57081a6210de53b8dcfdfea4';
 req.open('GET',lstr,true);
